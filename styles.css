@@ -1,0 +1,70 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.app {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header h1 {
+    margin: 50px 0 30px 0;
+    text-align: center;
+    font-size: calc(40px + 1vw);
+}
+
+header p {
+    font-size: calc(16px + 1vw);
+}
+
+.pads {
+    background: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-flow: row wrap;
+}
+
+.pad {
+    text-align: center;
+    background-color: #1e1e1e;
+    border: 5px solid pink;
+}
+
+img {
+    width: 50%;
+    height: auto;
+}
+
+@keyframes jump {
+    0% {
+        bottom: 0%;
+        left: 20%;
+    }
+    50% {
+        bottom: 50%;
+        left: 50%;
+    }
+    100% {
+        bottom: 0%;
+        left: 80%;
+    }
+}
+
+.visual>div {
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    left: 20%;
+    bottom: 0%;
+    z-index: -1;
+}
