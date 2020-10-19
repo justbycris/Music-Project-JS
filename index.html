@@ -16,30 +16,38 @@
             <p>Make music with only one tap.</p>
         </header>
         <div class="visual"></div>
-        <div class="pads">
+        <div class="iphone">
+            <div class="speaker"></div>
+            <div class="top-info">
+                <div id="time"></div>
+                <div class="battery"></div>
+                <div class="data-bars"></div>
+            </div>
+
             <div class="pad">
-                <img src="images/Aretha Franklin - I say a little prayer-01.png">
-                <audio class="sound" src="./audio/Aretha Franklin - I say a little prayer.mp3"></audio>
+                <img src="images/Aretha Franklin - I say a little prayer-01.png" onclick="document.getElementById('Isayalittleprayer').play();">
+                <audio id="Isayalittleprayer" src="./audio/Aretha Franklin - I say a little prayer.mp3"></audio>
+
             </div>
             <div class="pad">
-                <img src="images/James Brown - I feel good-01.png">
-                <audio class="sound" src="./audio/James Brown - I Feel Good.mp3"></audio>
+                <img src="images/James Brown - I feel good-01.png" onclick="document.getElementById('Ifeelgood').play();">
+                <audio id="Ifeelgood" src="./audio/James Brown - I Feel Good.mp3"></audio>
             </div>
             <div class="pad">
-                <img src="images/Leon Bridges - Smooth Sailing-01.png">
-                <audio class="sound" src="./audio/Leon Bridges Smooth Sailin' Lyric Video.mp3"></audio>
+                <img src="images/Leon Bridges - Smooth Sailing-01.png" onclick="document.getElementById('Smoothsailin').play();">
+                <audio id="Smoothsailin" src="./audio/Leon Bridges Smooth Sailin' Lyric Video.mp3"></audio>
             </div>
             <div class="pad">
-                <img src="images/Marvin Gaye - Let's get it on-01.png">
-                <audio class="sound" src="./audio/Marvin Gaye - Lets get it on.mp3"></audio>
+                <img src="images/Marvin Gaye - Let's get it on-01.png" onclick="document.getElementById('Letsgetiton').play();">
+                <audio id="Letsgetiton" src="./audio/Marvin Gaye - Lets get it on.mp3"></audio>
             </div>
             <div class="pad">
-                <img src="images/Jackson 5 - I want you back-01.png">
-                <audio class="sound" src="./audio/The Jackson 5 - I Want You Back [Audio HQ] HD.mp3"></audio>
+                <img src="images/Jackson 5 - I want you back-01.png" onclick="document.getElementById('Iwantyouback').play();">
+                <audio id="Iwantyouback" src="./audio/The Jackson 5 - I Want You Back [Audio HQ] HD.mp3"></audio>
             </div>
             <div class="pad">
-                <img src="images/Aretha Franklin - Respect-01.png">
-                <audio class="sound" src="./audio/Aretha Franklin - Respect [1967] (Aretha's Original Version).mp3"></audio>
+                <img src="images/Aretha Franklin - Respect-01.png" onclick="document.getElementById('Respect').play();">
+                <audio id="Respect" src="./audio/Aretha Franklin - Respect [1967] (Aretha's Original Version).mp3"></audio>
             </div>
 
         </div>

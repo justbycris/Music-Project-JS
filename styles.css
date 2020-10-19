@@ -6,18 +6,23 @@
 
 body {
     font-family: 'Poppins', sans-serif;
+    overflow: hidden;
 }
 
 .app {
     height: 100vh;
     display: flex;
-    flex-direction: column;
+    flex-flow: row wrap;
     align-items: center;
+    justify-content: center;
+}
+
+header {
+    text-align: left;
+    margin: 50px 50px 50px 0;
 }
 
 header h1 {
-    margin: 50px 0 30px 0;
-    text-align: center;
     font-size: calc(40px + 1vw);
 }
 
@@ -25,18 +30,34 @@ header p {
     font-size: calc(16px + 1vw);
 }
 
-.pads {
-    background: lightblue;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    flex-flow: row wrap;
+.iphone {
+    background: linear-gradient(to bottom right, #00ffdd, #009b86, #00463c);
+    height: 700px;
+    width: 380px;
+    border: 8px solid #000;
+    border-radius: 35px;
+    z-index: 11;
+    overflow-y: scroll;
+}
+
+.speaker {
+    position: sticky;
+    top: 0;
+    width: 220px;
+    height: 28px;
+    margin: 0 auto;
+    border-bottom-left-radius: 17px;
+    border-bottom-right-radius: 17px;
+    background-color: #000;
 }
 
 .pad {
-    text-align: center;
-    background-color: #1e1e1e;
-    border: 5px solid pink;
+    width: 100%;
+    text-align: left;
+}
+
+.pad:hover {
+    width: 120%;
 }
 
 img {
@@ -57,14 +78,4 @@ img {
         bottom: 0%;
         left: 80%;
     }
-}
-
-.visual>div {
-    position: absolute;
-    height: 50px;
-    width: 50px;
-    border-radius: 50%;
-    left: 20%;
-    bottom: 0%;
-    z-index: -1;
 }
