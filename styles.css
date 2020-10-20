@@ -51,18 +51,41 @@ header p {
     background-color: #000;
 }
 
-.pad {
-    width: 100%;
-    text-align: left;
+.screen {
+    margin: 25px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 15px;
+    padding: 5px;
 }
 
-.pad:hover {
-    width: 120%;
+.pad {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 img {
-    width: 50%;
+    position: relative;
+    width: 120px;
     height: auto;
+    border-radius: 15px;
+    padding: 5px;
+}
+
+.song-title {
+    width: 100%;
+    margin: 0 25px;
+}
+
+h2 {
+    font-size: 16px;
+    color: #fff;
+}
+
+h3 {
+    font-size: 14px;
+    color: #fff;
 }
 
 @keyframes jump {
