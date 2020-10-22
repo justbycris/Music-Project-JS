@@ -6,7 +6,6 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    overflow: hidden;
 }
 
 .app {
@@ -31,7 +30,7 @@ header p {
 }
 
 .iphone {
-    background: linear-gradient(to bottom right, #00ffdd, #009b86, #00463c);
+    background: linear-gradient(to bottom right, #00ffdd, #007a6a, #00463c);
     height: 700px;
     width: 380px;
     border: 8px solid #000;
@@ -49,13 +48,22 @@ header p {
     border-bottom-left-radius: 17px;
     border-bottom-right-radius: 17px;
     background-color: #000;
+    z-index: 10;
+}
+
+.soundcontrols {
+    position: relative;
+    margin-right: 15px;
 }
 
 .screen {
-    margin: 25px;
     background-color: rgba(0, 0, 0, 0.8);
     border-radius: 15px;
     padding: 5px;
+    height: 400px;
+    z-index: 12;
+    overflow-y: scroll;
+    margin: 230px 25px 0 25px;
 }
 
 .pad {
