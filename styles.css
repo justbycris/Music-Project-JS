@@ -17,8 +17,12 @@ body {
 }
 
 header {
-    text-align: left;
-    margin: 50px 50px 50px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 50px 50px 50px 50px;
 }
 
 header h1 {
@@ -27,6 +31,14 @@ header h1 {
 
 header p {
     font-size: calc(16px + 1vw);
+}
+
+.display-screen {
+    width: 80%;
+    height: 80%;
+    background-color: rgba(0, 0, 0, 0.8);
+    margin: 25px 0;
+    border-radius: 15px;
 }
 
 .iphone {
@@ -51,19 +63,52 @@ header p {
     z-index: 10;
 }
 
-.soundcontrols {
-    position: relative;
-    margin-right: 15px;
+.display-screen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+}
+
+.controls {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.controls button {
+    background: transparent;
+    border: none;
+    outline: none;
+}
+
+.controls button:active {
+    transform: translateY(3%);
+}
+
+.controls button img {
+    width: 60px;
 }
 
 .screen {
     background-color: rgba(0, 0, 0, 0.8);
     border-radius: 15px;
     padding: 5px;
-    height: 400px;
+    height: 615px;
     z-index: 12;
     overflow-y: scroll;
-    margin: 230px 25px 0 25px;
+    margin: 20px 25px 0 25px;
+}
+
+.playist-info {
+    background: #000;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    text-align: center;
+    z-index: 8
 }
 
 .pad {
@@ -87,11 +132,16 @@ img {
 }
 
 h2 {
-    font-size: 16px;
+    font-size: 30px;
     color: #fff;
 }
 
 h3 {
+    font-size: 16px;
+    color: #fff;
+}
+
+h4 {
     font-size: 14px;
     color: #fff;
 }

@@ -11,9 +11,18 @@
 
 <body>
     <div class="app">
+
         <header>
-            <h1>Happy Playlist</h1>
+            <h1>Cristi's Playlist</h1>
             <p>Music that makes you feel alive.</p>
+            <div class="display-screen">
+                <img class="songplaying" src="images/James Brown - I feel good-01.png">
+                <div class="controls">
+                    <button><img src="images/previous-icon.png"></button>
+                    <button><img src="images/play-icon.png"></button>
+                    <button><img src="images/next-icon.png"></button>
+                </div>
+            </div>
         </header>
         <div class="visual"></div>
         <div class="iphone">
@@ -24,30 +33,31 @@
                 <div class="data-bars"></div>
             </div>
             <div class="screen">
-                <div class="music-controls">
+                <div class="playist-info">
+                    <h2>Playlist: </h2>
                 </div>
                 <div class="pad">
                     <img src="images/Aretha Franklin - I say a little prayer-01.png" onclick="document.getElementById('Isayalittleprayer').play();">
                     <audio id="Isayalittleprayer" src="./audio/Aretha Franklin - I say a little prayer.mp3"></audio>
                     <div class="song-title">
-                        <h2>I Say a Little Prayer</h2>
-                        <h3>Aretha Franklin</h3>
+                        <h3>I Say a Little Prayer</h3>
+                        <h4>Aretha Franklin</h4>
                     </div>
                 </div>
                 <div class="pad">
                     <img src="images/James Brown - I feel good-01.png" onclick="document.getElementById('Ifeelgood').play();">
                     <audio id="Ifeelgood" src="./audio/James Brown - I Feel Good.mp3"></audio>
                     <div class="song-title">
-                        <h2>I Feel Good</h2>
-                        <h3>James Brown</h3>
+                        <h3>I Feel Good</h3>
+                        <h4>James Brown</h4>
                     </div>
                 </div>
                 <div class="pad">
                     <img src="images/Leon Bridges - Smooth Sailing-01.png" onclick="document.getElementById('Smoothsailin').play();">
                     <audio id="Smoothsailin" src="./audio/Leon Bridges Smooth Sailin' Lyric Video.mp3"></audio>
                     <div class="song-title">
-                        <h2>Smooth Sailin'</h2>
-                        <h3>Leon Bridges</h3>
+                        <h3>Smooth Sailin'</h3>
+                        <h4>Leon Bridges</h4>
                     </div>
 
                 </div>
@@ -55,8 +65,8 @@
                     <img src="images/Marvin Gaye - Let's get it on-01.png" onclick="document.getElementById('Letsgetiton').play();">
                     <audio id="Letsgetiton" src="./audio/Marvin Gaye - Lets get it on.mp3"></audio>
                     <div class="song-title">
-                        <h2>Let's Get It On</h2>
-                        <h3>Marvin Gaye</h3>
+                        <h3>Let's Get It On</h3>
+                        <h4>Marvin Gaye</h4>
                     </div>
 
                 </div>
@@ -64,16 +74,16 @@
                     <img src="images/Jackson 5 - I want you back-01.png" onclick="document.getElementById('Iwantyouback').play();">
                     <audio id="Iwantyouback" src="./audio/The Jackson 5 - I Want You Back [Audio HQ] HD.mp3"></audio>
                     <div class="song-title">
-                        <h2>I Want You Back</h2>
-                        <h3>Jackson Five</h3>
+                        <h3>I Want You Back</h3>
+                        <h4>Jackson Five</h4>
                     </div>
                 </div>
                 <div class="pad">
                     <img src="images/Aretha Franklin - Respect-01.png" onclick="document.getElementById('Respect').play();">
                     <audio id="Respect" src="./audio/Aretha Franklin - Respect [1967] (Aretha's Original Version).mp3"></audio>
                     <div class="song-title">
-                        <h2>Respect</h2>
-                        <h3>Aretha Franklin</h3>
+                        <h3>Respect</h3>
+                        <h4>Aretha Franklin</h4>
                     </div>
                 </div>
             </div>
