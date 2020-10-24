@@ -11,18 +11,21 @@
 
 <body>
     <div class="app">
-
+        <img class="logo" src="images/Mud Logo.png">
         <header>
-            <h1>Cristi's Playlist</h1>
-            <p>Music that makes you feel alive.</p>
+
+            <h1>Playlist:</h1>
+            <p>It was a Cultural Reset</p>
+
             <div class="display-screen">
-                <img class="songplaying" src="images/James Brown - I feel good-01.png">
+                <div class="songplaying"></div>
                 <div class="controls">
-                    <button><img src="images/previous-icon.png"></button>
-                    <button><img src="images/play-icon.png"></button>
-                    <button><img src="images/next-icon.png"></button>
+                    <button id="prev"><img src="images/previous-icon.png"></button>
+                    <button id="play"><img src="images/play-icon.png"></button>
+                    <button id="next"><img src="images/next-icon.png"></button>
                 </div>
             </div>
+            <small>Mud Magazine</small>
         </header>
         <div class="visual"></div>
         <div class="iphone">
@@ -34,56 +37,63 @@
             </div>
             <div class="screen">
                 <div class="playist-info">
-                    <h2>Playlist: </h2>
+                    <h2>Songs</h2>
                 </div>
-                <div class="pad">
-                    <img src="images/Aretha Franklin - I say a little prayer-01.png" onclick="document.getElementById('Isayalittleprayer').play();">
-                    <audio id="Isayalittleprayer" src="./audio/Aretha Franklin - I say a little prayer.mp3"></audio>
+                <div class="pad" onclick="document.getElementById('Wap').play();">
+                    <img src="images/Wap.png">
+                    <audio id="Wap" src="./audio/Cardi B - Wap (Lyrics) ft. Megan Thee Stallion.mp3"></audio>
                     <div class="song-title">
-                        <h3>I Say a Little Prayer</h3>
-                        <h4>Aretha Franklin</h4>
+                        <h3>Wap</h3>
+                        <h4>Cardi B ft. Megan Thee Stallion</h4>
                     </div>
                 </div>
-                <div class="pad">
-                    <img src="images/James Brown - I feel good-01.png" onclick="document.getElementById('Ifeelgood').play();">
-                    <audio id="Ifeelgood" src="./audio/James Brown - I Feel Good.mp3"></audio>
+                <div class="pad" onclick="document.getElementById('Baby').play();">
+                    <img src="images/babycoveralbum-01.png">
+                    <audio id="Baby" src="./audio/Baby Justin Bieber .mp3"></audio>
                     <div class="song-title">
-                        <h3>I Feel Good</h3>
-                        <h4>James Brown</h4>
+                        <h3>Baby</h3>
+                        <h4>Justin Bieber ft. Ludacris</h4>
                     </div>
                 </div>
-                <div class="pad">
-                    <img src="images/Leon Bridges - Smooth Sailing-01.png" onclick="document.getElementById('Smoothsailin').play();">
-                    <audio id="Smoothsailin" src="./audio/Leon Bridges Smooth Sailin' Lyric Video.mp3"></audio>
+                <div class="pad" onclick="document.getElementById('Umbrella').play();">
+                    <img src="images/Umbrella-01.png">
+                    <audio id="Umbrella" src="./audio/Rihanna Umbrella lyrics YouTube.mp3"></audio>
                     <div class="song-title">
-                        <h3>Smooth Sailin'</h3>
-                        <h4>Leon Bridges</h4>
+                        <h3>Umbrella</h3>
+                        <h4>Rihanna ft.<br>Jay-Z</h4>
                     </div>
+                </div>
+                <div class="pad" onclick="document.getElementById('Sk8er').play();">
+                    <img src="images/Sk8rBoiCover-01.png">
+                    <audio id="Sk8er" src="./audio/Avril Lavigne - Sk8er Boi [LyricsLetra].mp3"></audio>
+                    <div class="song-title">
+                        <h3>Sk8er Boi</h3>
+                        <h4>Avril Lavigne</h4>
+                    </div>
+                </div>
 
-                </div>
-                <div class="pad">
-                    <img src="images/Marvin Gaye - Let's get it on-01.png" onclick="document.getElementById('Letsgetiton').play();">
-                    <audio id="Letsgetiton" src="./audio/Marvin Gaye - Lets get it on.mp3"></audio>
+                <div class="pad" onclick="document.getElementById('Thinkinaboutyou').play();">
+                    <img src="images/Thinking about you-01.png">
+                    <audio id="Thinkinaboutyou" src="./audio/thinking bout you frank ocean [lyrics].mp3"></audio>
                     <div class="song-title">
-                        <h3>Let's Get It On</h3>
-                        <h4>Marvin Gaye</h4>
-                    </div>
-
-                </div>
-                <div class="pad">
-                    <img src="images/Jackson 5 - I want you back-01.png" onclick="document.getElementById('Iwantyouback').play();">
-                    <audio id="Iwantyouback" src="./audio/The Jackson 5 - I Want You Back [Audio HQ] HD.mp3"></audio>
-                    <div class="song-title">
-                        <h3>I Want You Back</h3>
-                        <h4>Jackson Five</h4>
+                        <h3>Thinkin' Bout You</h3>
+                        <h4>Frank Ocean</h4>
                     </div>
                 </div>
-                <div class="pad">
-                    <img src="images/Aretha Franklin - Respect-01.png" onclick="document.getElementById('Respect').play();">
-                    <audio id="Respect" src="./audio/Aretha Franklin - Respect [1967] (Aretha's Original Version).mp3"></audio>
+                <div class="pad" onclick="document.getElementById('Whenigrowup').play();">
+                    <img src="images/PCD1-01.png">
+                    <audio id="Whenigrowup" src="./audio/Pussycat Dolls - When I grow up LYRICS.mp3"></audio>
                     <div class="song-title">
-                        <h3>Respect</h3>
-                        <h4>Aretha Franklin</h4>
+                        <h3>When I Grow Up</h3>
+                        <h4>Pussy Cat Dolls</h4>
+                    </div>
+                </div>
+                <div class="pad" onclick="document.getElementById('Idontfuckwithyou').play();">
+                    <img src="images/Idontfuckwithyou-01.png">
+                    <audio id="Idontfuckwithyou" src="./audio/Big Sean - I don't fuck with you ft. E-40 #IDFWU LYRICS.mp3"></audio>
+                    <div class="song-title">
+                        <h3>I Don't Fuck With You</h3>
+                        <h4>Big Sean</h4>
                     </div>
                 </div>
             </div>
