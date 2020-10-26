@@ -6,8 +6,15 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    background-image: url(/images/records2.jpg);
+    overflow: hidden;
+}
+
+.background {
     background-size: cover;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
 }
 
 .app {
@@ -22,8 +29,8 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    margin-left: 25px;
-    width: 100px;
+    margin: 25px;
+    width: 80px;
 }
 
 header {
@@ -36,6 +43,7 @@ header {
     background: rgba(0, 0, 0, 0.8);
     border-radius: 15px;
     padding: 25px;
+    width: 500px;
 }
 
 header small {
@@ -138,7 +146,7 @@ header p {
     padding: 5px 10px;
 }
 
-img {
+.pad img {
     position: relative;
     width: 120px;
     height: auto;
