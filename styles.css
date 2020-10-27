@@ -61,14 +61,20 @@ header p {
     color: #fff;
 }
 
+.nowplaying {
+    width: 300px;
+    margin-top: 25px;
+    margin-bottom: -120px;
+    border-radius: 5px;
+}
+
 .display-screen {
     width: 100%;
     height: auto;
-    margin: 25px 0;
 }
 
 .iphone {
-    background: linear-gradient(to bottom right, #ffffff, rgb(122, 122, 122), #000);
+    background: linear-gradient(to bottom right, #217dd8, #185a9d, #0a2744);
     /*background: linear-gradient(to bottom right, #00ffdd, #007a6a, #00463c);*/
     height: 700px;
     width: 380px;
@@ -103,12 +109,14 @@ header p {
     flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
+    margin-bottom: -80px;
 }
 
 .controls button {
     background: transparent;
     border: none;
     outline: none;
+    padding: 0 20px;
 }
 
 .controls button:active {
@@ -117,7 +125,8 @@ header p {
 
 .controls button img {
     width: 45px;
-    margin: 0 auto;
+    cursor: pointer;
+    margin: -50px 0;
 }
 
 .screen {
@@ -144,6 +153,7 @@ header p {
     justify-content: center;
     align-items: center;
     padding: 5px 10px;
+    cursor: pointer;
 }
 
 .pad img {
