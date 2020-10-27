@@ -11,17 +11,19 @@
 </head>
 
 <body>
-    <img class="background" src="images/Backgrounds/background1.jpg">
+    <img class="background" src="images/Backgrounds/background4.jpg">
     <div class="app">
         <img class="logo" src="images/Icons:Logos/logo.png">
         <header>
-            <h1>Playlist:</h1>
+            <h1>Now Playing:</h1>
             <p>Hustle & Grow</p>
             <img class="nowplaying" src="images/Album covers/Hustle&grow-01.png">
 
             <div class="display-screen">
                 <div class="songplaying"></div>
+                <input id="range" class="level" type="range" value="0" min="0">
                 <div class="controls">
+
                     <button id="prev"><img src="images/Icons:Logos/previous-icon.png"></button>
                     <button id="play"><img src="images/Icons:Logos/play-icon.png"></button>
                     <button id="next"><img src="images/Icons:Logos/next-icon.png"></button>
@@ -41,8 +43,8 @@
                 <div class="playist-info">
                     <h2>Songs</h2>
                 </div>
-                <div class="pad" onclick="playSong()">
-                    <img src="images/Album covers/Aretha Franklin - Respect-01.png" onclick="playSong()">
+                <div class="pad">
+                    <img src="images/Album covers/Aretha Franklin - Respect-01.png" onclick="play()">
                     <audio class="track" src="./audio/Hustle & Grow/Aretha Franklin - Respect [1967] (Aretha's Original Version).mp3"></audio>
                     <div class="song-title">
                         <h3>Respect</h3>
