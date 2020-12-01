@@ -4,102 +4,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tap Music</title>
+    <title>Music Player</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;700&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
-    <img class="background" src="images/Backgrounds/background4.jpg">
-    <div class="app">
-        <img class="logo" src="images/Icons:Logos/logo.png">
-        <header>
-            <h1>Now Playing:</h1>
-            <p>Hustle & Grow</p>
-            <img class="nowplaying" src="images/Album covers/Hustle&grow-01.png">
-
-            <div class="display-screen">
-                <div class="songplaying"></div>
-                <input id="range" class="level" type="range" value="0" min="0">
-                <div class="controls">
-
-                    <button id="prev"><img src="images/Icons:Logos/previous-icon.png"></button>
-                    <button id="play"><img src="images/Icons:Logos/play-icon.png"></button>
-                    <button id="next"><img src="images/Icons:Logos/next-icon.png"></button>
-                </div>
-            </div>
-            <small>Coded by Cristi Gutierrez</small>
-        </header>
-
-        <div class="iphone">
-            <div class="speaker"></div>
-            <div class="top-info">
-                <div id="time"></div>
-                <div class="battery"></div>
-                <div class="data-bars"></div>
-            </div>
-            <div class="screen">
-                <div class="playist-info">
-                    <h2>Songs</h2>
-                </div>
-                <div class="pad">
-                    <img src="images/Album covers/Aretha Franklin - Respect-01.png" onclick="play()">
-                    <audio class="track" src="./audio/Hustle & Grow/Aretha Franklin - Respect [1967] (Aretha's Original Version).mp3"></audio>
-                    <div class="song-title">
-                        <h3>Respect</h3>
-                        <h4>Aretha Franklin</h4>
-                    </div>
-                </div>
-                <div class="pad" onclick="playSong()">
-                    <img src="images/Album covers/formation-cover-01.png">
-                    <audio class="track" src="./audio/Hustle & Grow/Beyoncé - Formation.mp3"></audio>
-                    <div class="song-title">
-                        <h3>Formation</h3>
-                        <h4>Beyonce</h4>
-                    </div>
-                </div>
-                <div class="pad" onclick="playSong()">
-                    <img src="images/Album covers/Idontfuckwithyou-01.png">
-                    <audio class="track" src="./audio/Hustle & Grow/Big Sean - I don't fuck with you ft. E-40 #IDFWU LYRICS.mp3"></audio>
-                    <div class="song-title">
-                        <h3>I Don't Fuck With You</h3>
-                        <h4>Rihanna ft.<br>Jay-Z</h4>
-                    </div>
-                </div>
-                <div class="pad" onclick="playSong()">
-                    <img src="images/Album covers/Itsmylife-01.png">
-                    <audio class="track" src="./audio/Hustle & Grow/Bon Jovi -It's my life.mp3"></audio>
-                    <div class="song-title">
-                        <h3>It's My Life</h3>
-                        <h4>Bon Jovi</h4>
-                    </div>
-                </div>
-
-                <div class="pad" onclick="playSong()">
-                    <img src="images/Album covers/8MILE-COVER-01.png">
-                    <audio class="track" src="./audio/Hustle & Grow/Eminem - 8 Mile .mp3"></audio>
-                    <div class="song-title">
-                        <h3>8 Mile</h3>
-                        <h4>Eminem</h4>
-                    </div>
-                </div>
-                <div class="pad" onclick="playSong()">
-                    <img src="images/Album covers/whateverittakes-01.png">
-                    <audio class="track" src="./audio/Hustle & Grow/Imagine Dragons - Whatever It Takes .mp3"></audio>
-                    <div class="song-title">
-                        <h3>Whatever It Takes</h3>
-                        <h4>Imagine Dragons</h4>
-                    </div>
-                </div>
-                <div class="pad" onclick="playSong()">
-                    <img src="images/Album covers/MonsterJB-01.png">
-                    <audio class="track" src="./audio/Hustle & Grow/Jacob Banks - Monster .mp3"></audio>
-                    <div class="song-title">
-                        <h3>Monster</h3>
-                        <h4>Jacob Banks ft. Boogie</h4>
-                    </div>
-                </div>
+    <img class="logo" src="images/Icons:Logos/logo.png">
+    <div class="player">
+        <div class="container">
+            <h1>Cristi's Playlist</h1>
+            <img class="img-cover" src="images/Album covers/Hustle&grow-01.png" alt="Playist Cover">
+            <input id="range" class="level" type="range" value="0" min="0">
+            <div class="buttons">
+                <button id="pre"><img src="images/Icons:Logos/previous-icon.png"></button>
+                <button id="play"><img id="play" src="images/Icons:Logos/play-icon.png"></button>
+                <button id="next"><img src="images/Icons:Logos/next-icon.png"></button>
             </div>
         </div>
     </div>
