@@ -1,60 +1,60 @@
-/*let songList = document.getElementById('songList');
-
-const songs = [{
-        name: "Respect",
-        artist: "Aretha Franklin",
-        imgFile: "images/Album covers/Aretha Franklin - Respect-01.png",
-        Audio: "./audio/Hustle & Grow/Aretha Franklin - Respect [1967] (Aretha's Original Version).mp3"
-    },
-    {
-        name: "Formation",
-        artist: "Beyonce",
-        imgFile: "images/Album covers/formation-cover-01.png",
-        Audio: "./audio/Hustle & Grow/Beyoncé - Formation.mp3"
-    },
-    {
-        name: "I Don't Fuck With You",
-        artist: "Big Sean",
-        imgFile: "images/Album covers/Idontfuckwithyou-01.png",
-        audio: "./audio/Hustle & Grow/Big Sean - I don't fuck with you ft. E-40 #IDFWU LYRICS.mp3"
-    },
-    {
-        name: "It's My Life",
-        artist: "Bon Jovi",
-        imgFile: "images/Album covers/Itsmylife-01.png",
-        audio: "./audio/Hustle & Grow/Bon Jovi -It's my life.mp3"
-    },
-    {
-        name: "8 Mile",
-        artist: "Eminem",
-        imgFile: "images/Album covers/8MILE-COVER-01.png",
-        audio: "./audio/Hustle & Grow/Eminem - 8 Mile .mp3"
-    },
-    {
-        name: "Whatever It Takes",
-        artist: "Imagine Dragons",
-        imgFile: '//images/Albumcovers/whateverittakes.jpg',
-        audio: "./audio/Hustle & Grow/Imagine Dragons - Whatever It Takes .mp3"
-    },
-    {
-        name: "Monster",
-        artist: "Jacob Banks",
-        imgFile: "images/Albumcovers/MonsterJB-01.png",
-        audio: "./audio/Hustle & Grow/Jacob Banks - Monster .mp3"
-    }
+const songs = [
+    "LeonBridges-SmoothSailin.mp3",
+    "ArethaFranklin-ISayALittlePrayer.mp3",
+    "TheJackson5-IWantYouBack.mp3",
+    "AvrilLavigne-Sk8erBoi.mp3",
+    "MarvinGaye-LetsGetItOn.mp3",
 ];
 
-const createSongList = () => {
-    const list = document.createElement('div')
+const player = document.getElementById('player')
 
+function createSongList() {
+    const list = document.createElement('ol');
+
+    //FOR LOOP TO CREATE THE <li></li> element for every song on the array
     for (let i = 0; i < songs.length; i++) {
-        const newsong = document.insertAdjacentHTML(beforebegin)
-        const item = document.createElement('div')
-        item.appendChild(document.createTextNode(Object.values(songs[i])))
-
-        list.appendChild(item)
+        const item = document.createElement('li');
+        item.appendChild(document.createTextNode(songs[i]));
+        list.appendChild(item);
     }
     return list
 }
 
-document.getElementById('songList').appendChild(createSongList())
+const songList = document.getElementById('songsList');
+songList.appendChild(createSongList());
+
+songList.onclick = function(e) {
+
+    const source = document.getElementById('source');
+    source.src = "audio/" + e.target.innerText;
+
+    //DISPLAY SONG NAME THAT IS PLAYING
+    document.querySelector('#currentSong').innerText = `Now Playing: ${e.target.innerText}`;
+
+    //PLAY SONG WHEN CLICKED
+
+    player.load()
+    player.play()
+
+    //*IDEA* ADD TO DISPLAY ALBUM IMAGE
+}
+
+
+//PLAY BUTTON 
+function playAudio() {
+    if (player.readyState) {
+        player.play();
+    }
+}
+
+//PAUSE BUTTON
+function pauseAudio() {
+    player.pause();
+}
+
+//CONTROL VOLUME
+const slider = document.getElementById('volumeSlider');
+slider.oninput = function(e) {
+    const volume = e.target.value
+    player.volume = volume;
+}
