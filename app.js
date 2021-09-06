@@ -6,8 +6,10 @@ const songs = [
     "MarvinGaye-LetsGetItOn.mp3",
 ];
 
-const player = document.getElementById('player')
 
+const player = document.getElementById('player');
+
+//CREATE SONG LIST
 function createSongList() {
     const list = document.createElement('ol');
 
@@ -23,13 +25,18 @@ function createSongList() {
 const songList = document.getElementById('songsList');
 songList.appendChild(createSongList());
 
-songList.onclick = function(e) {
+const links = document.querySelectorAll('li');
+for (const link of links) {
+    link.addEventListener('click', setSong)
+}
 
+function setSong(e) {
+    document.querySelector('#image_player').classList.remove("pulse");
     const source = document.getElementById('source');
     source.src = "audio/" + e.target.innerText;
 
     //DISPLAY SONG NAME THAT IS PLAYING
-    document.querySelector('#currentSong').innerText = `Now Playing: ${e.target.innerText}`;
+    document.querySelector('#currentSong').innerHTML = `Now Playing: <br> <br> ${e.target.innerText}`;
 
     //PLAY SONG WHEN CLICKED
 
@@ -37,6 +44,9 @@ songList.onclick = function(e) {
     player.play()
 
     //*IDEA* ADD TO DISPLAY ALBUM IMAGE
+
+    //ANIMATION EFFECT ON HEADPHONES
+    document.querySelector('#image_player').classList.add("pulse");
 }
 
 
@@ -57,4 +67,12 @@ const slider = document.getElementById('volumeSlider');
 slider.oninput = function(e) {
     const volume = e.target.value
     player.volume = volume;
+}
+
+//PROGRESS BAR
+function updateProgress() {
+    if (player.currentTime > 0) {
+        const progressBar = document.getElementById('progress');
+        progressBar.value = (player.currentTime / player.duration) * 100;
+    }
 }

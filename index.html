@@ -12,11 +12,14 @@
 
 <body>
     <div class="player">
-        <img src="https://images.unsplash.com/photo-1608538770329-65941f62f9f8?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=954&q=80" alt="Music note">
-        <audio id="player">
+        <img src="https://images.unsplash.com/photo-1510766315117-0f791eb90af7?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1567&q=80" alt="Music note" id="image_player">
+        <audio id="player" ontimeupdate="updateProgress()">
         <source id="source" />
         Audio Not Supported
     </audio>
+
+        <progress id="progress" value="0" max="100"></progress>
+
         <div id="controls">
             <p id="currentSong"> </p>
             <div class="control_wrapper">
@@ -34,7 +37,7 @@
         <h2>My Songs</h2>
 
         <div id="songsList"></div>
-        <p>Music: <a href="#">link </a></p>
+
     </div>
 
     <script src="app.js" type="text/javascript"></script>
